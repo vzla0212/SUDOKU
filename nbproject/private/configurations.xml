@@ -2,8 +2,7 @@
 <configurationDescriptor version="85">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root=".">
-      <in>Makefile</in>
-      <in>README.md</in>
+      <in>main.cpp</in>
     </df>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -29,6 +28,10 @@
         </gdb_options>
         <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
       </dbx_gdbdebugger>
+      <item path="main.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
       <nativedebugger version="1">
         <engine>gdb</engine>
       </nativedebugger>
