@@ -2,6 +2,89 @@
 <configurationDescriptor version="85">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root=".">
+      <df name="minisat">
+        <df name="build">
+          <df name="dynamic">
+            <df name="lib">
+              <in>libminisat.so.2</in>
+              <in>libminisat.so.2.1.0</in>
+            </df>
+            <df name="minisat">
+              <df name="core">
+                <in>Solver.d</in>
+              </df>
+              <df name="simp">
+                <in>SimpSolver.d</in>
+              </df>
+              <df name="utils">
+                <in>Options.d</in>
+                <in>System.d</in>
+              </df>
+            </df>
+          </df>
+          <df name="release">
+            <df name="bin">
+              <in>minisat</in>
+            </df>
+            <df name="lib">
+            </df>
+            <df name="minisat">
+              <df name="core">
+                <in>Solver.d</in>
+              </df>
+              <df name="simp">
+                <in>Main.d</in>
+                <in>SimpSolver.d</in>
+              </df>
+              <df name="utils">
+                <in>Options.d</in>
+                <in>System.d</in>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="doc">
+          <in>ReleaseNotes-2.2.0.txt</in>
+        </df>
+        <df name="minisat">
+          <df name="core">
+            <in>Dimacs.h</in>
+            <in>Main.cc</in>
+            <in>Solver.cc</in>
+            <in>Solver.h</in>
+            <in>SolverTypes.h</in>
+          </df>
+          <df name="mtl">
+            <in>Alg.h</in>
+            <in>Alloc.h</in>
+            <in>Heap.h</in>
+            <in>IntMap.h</in>
+            <in>IntTypes.h</in>
+            <in>Map.h</in>
+            <in>Queue.h</in>
+            <in>Rnd.h</in>
+            <in>Sort.h</in>
+            <in>Vec.h</in>
+            <in>XAlloc.h</in>
+          </df>
+          <df name="simp">
+            <in>Main.cc</in>
+            <in>SimpSolver.cc</in>
+            <in>SimpSolver.h</in>
+          </df>
+          <df name="utils">
+            <in>Options.cc</in>
+            <in>Options.h</in>
+            <in>ParseUtils.h</in>
+            <in>System.cc</in>
+            <in>System.h</in>
+          </df>
+        </df>
+        <in>CMakeLists.txt</in>
+        <in>LICENSE</in>
+        <in>Makefile</in>
+        <in>README</in>
+      </df>
       <in>main.cpp</in>
     </df>
   </logicalFolder>
